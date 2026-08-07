@@ -14,5 +14,6 @@ class Solution:
             if s[i] in vowels:
                 count+=1
 
-            max_count=max(max_count,count)
+            if count>max_count:
+               max_count=count 
         return max_count
