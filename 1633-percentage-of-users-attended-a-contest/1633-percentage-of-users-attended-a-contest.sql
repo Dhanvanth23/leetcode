@@ -4,7 +4,7 @@ SELECT
         COUNT(user_id) * 100.0 /
         (SELECT COUNT(*) FROM Users),
         2
-    )  percentage
+    ) as percentage
 FROM Register
 GROUP BY contest_id
 ORDER BY percentage DESC, contest_id ASC;
